@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnRedf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:background="#ff0000"
+        android:text="RED"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRedf"
+        android:background="#00ff00"
+        android:layout_marginLeft="@dimen/mar"
+        android:layout_marginStart="@dimen/mar"
+        android:layout_toEndOf="@+id/btnRedf"
+        android:layout_toRightOf="@+id/btnRedf"
+        android:text="GREEN" />
+
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGreen"
+        android:background="#0000ff"
+        android:layout_toRightOf="@id/btnGreen"
+        android:layout_marginLeft="@dimen/mar"
+        android:text="BLUE" />
+
+    <Button
+        android:id="@+id/btnCyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnBlue"
+        android:layout_toLeftOf="@+id/btnBlue"
+        android:layout_toStartOf="@+id/btnBlue"
+        android:background="#65ffea"
+        android:text="Cyan" />
+
+    <Button
+        android:id="@+id/btnMagenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btnRedf"
+        android:layout_below="@+id/btnCyan"
+        android:background="#fc43ff"
+        android:text="magenta" />
+
+    <Button
+        android:id="@+id/btnYellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnCyan"
+        android:layout_alignRight="@+id/btnCyan"
+        android:layout_below="@+id/btnMagenta"
+        android:background="#ffff00"
+        android:text="Yellow" />
+
+    <Button
+        android:id="@+id/btnBlack"
+        android:background="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Black"
+        android:textColor="#fff"
+        android:layout_below="@+id/btnYellow"
+        android:layout_alignRight="@id/btnBlue"
+         />
+</RelativeLayout>
